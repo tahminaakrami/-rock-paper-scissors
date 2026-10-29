@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease;
+}
+
+.game {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 25px;
+}
+
+h1 {
+    background-color: black;
+    padding: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.score p {
+    background-color: black;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.hands {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.hand-box {
+    flex: 1;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.hand-box h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hand {
+    font-size: 65px;
+    padding: 15px 0;
+}
+
+#result {
+    margin: 25px 0;
+    font-size: 22px;
+    min-height: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.buttons button {
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+.buttons button:hover {
+    background-color: #ffd700;
+}
+
+.reset {
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+}
+
+.reset:hover {
+    background-color: #333;
+}
+
+@media (max-width: 480px) {
+    .game {
+        width: 100%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .score {
+        font-size: 14px;
+    }
+
+    .hand {
+        font-size: 48px;
+    }
+
+    .hand-box h2 {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 11px 14px;
+        font-size: 15px;
+    }
+}
